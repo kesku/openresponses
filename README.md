@@ -28,17 +28,17 @@ The interactive compliance tester is available at https://www.openresponses.org/
 Run the same compliance suite as the web UI from the command line. For example:
 
 ```bash
-npm run test:compliance -- --base-url http://localhost:8000/v1 --api-key $API_KEY
+bun run test:compliance --base-url http://localhost:8000/v1 --api-key $API_KEY
 ```
 
 Filter to specific tests:
 
 ```bash
-npm run test:compliance -- --base-url http://localhost:8000/v1 --api-key $API_KEY --filter basic-response,streaming-response
+bun run test:compliance --base-url http://localhost:8000/v1 --api-key $API_KEY --filter basic-response,streaming-response
 ```
 
 For all flags:
 
 ```bash
-bun run bin/compliance-test.ts --help
+bun run test:compliance --help
 ```
